@@ -40,3 +40,6 @@ main{padding:18px 15px 30px}.section-title{margin:24px 4px 11px;color:var(--navy
 a.card{cursor:pointer;border-color:#b9d4e8}
 div.card,section.card{cursor:default}
 .section-title,.section-sub,.note,.info-panel{cursor:default}
+
+/* Parcours d’intégration */
+.journey-cards{margin-top:8px}.journey-cards .form-card{min-height:126px}.status-open{background:var(--green-soft);color:#205f39}.status-action{background:var(--orange-soft);color:#87520d}.ready-card{border-color:#efc079;background:linear-gradient(180deg,#fff,#fffaf1)}.future-card{opacity:.72;border-style:dashed;box-shadow:none}.lock-mark{font-size:10px;font-weight:900;color:var(--muted);text-align:center}.optional-label{font-weight:600;color:var(--muted);font-size:12px}.multi-choice-grid .choice{text-align:left;position:relative;padding-left:38px}.multi-choice-grid .choice:before{content:"";position:absolute;left:13px;top:50%;transform:translateY(-50%);width:15px;height:15px;border:2px solid #9eacba;border-radius:5px;background:#fff}.multi-choice-grid .choice.selected:before{content:"✓";display:grid;place-items:center;color:var(--navy);font-size:12px;font-weight:1000;border-color:#fff}.multi-choice-grid .choice.selected{background:var(--navy);color:#fff}
