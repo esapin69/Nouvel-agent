@@ -1,5 +1,5 @@
 
-const CONFIG={APPS_SCRIPT_URL:"https://script.google.com/macros/s/AKfycbyT31o3uSvwy-WrVZ4QGRQ8u9js6tpC4a1bzUy3VHl_ccySpAnFnjjPzzj3Vcrco6X_/exec"};
+const CONFIG={APPS_SCRIPT_URL:"https://script.google.com/macros/s/AKfycbyxXxuuEjwHlFmXdjFn6tjlE6iJt41-yFRGyD3xWXCa4OvmKKWb8cU4pCwxsR_lOWhElQ/exec"};
 document.addEventListener("click",e=>{const c=e.target.closest(".choice");if(!c)return;const g=c.parentElement;const hidden=g.nextElementSibling;if(c.classList.contains("multi-choice")){c.classList.toggle("selected");if(hidden&&hidden.type==="hidden")hidden.value=[...g.querySelectorAll(".multi-choice.selected")].map(x=>x.dataset.value||x.textContent.trim()).join(" | ");return;}g.querySelectorAll(".choice").forEach(x=>x.classList.remove("selected"));c.classList.add("selected");if(hidden&&hidden.type==="hidden")hidden.value=c.dataset.value||c.textContent.trim()});
 document.querySelectorAll('input[type="range"]').forEach(r=>{const o=document.querySelector(`[data-range="${r.id}"]`);const u=()=>{if(o)o.textContent=`${r.value} %`};r.addEventListener("input",u);u()});
 function escapeHtml(v){return String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;")}
